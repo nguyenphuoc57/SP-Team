@@ -1,0 +1,12 @@
+import cv2
+img = cv2.imread('Lulu_0.jpg')
+cv2.imshow('image',img)
+#cv2.waitKey(0)
+#cv2.destroyAllWindows()
+img_HSV = cv2.cvtColor(img, cv2.COLOR_RGB2HSV)
+cv2.imshow('HSV Image',img)
+cv2.imshow('H Image',img_HSV[:, :, 0])
+cv2.imshow('S Image',img_HSV[:, :, 1])
+cv2.imshow('V Image',img_HSV[:, :, 2])
+cv2.waitKey(0)
+cv2.destroyAllWindows()
