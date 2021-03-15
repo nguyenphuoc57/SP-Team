@@ -18,16 +18,16 @@
                   and     
 **Gray to RGB[A]:R←Y,G←Y,B←Y,A←max(ChannelRange)**
 ## 3. Python
-  We have an command code available in Opencv's source:
+  We have a command code available in Opencv's source:
   
   `cvtColor(src, bwsrc, cv::COLOR_RGB2GRAY);`
   
-  - Covert image to text file
-  - Covert text file to image
+  - Convert image to text file
+  - Convert text file to image
 ## 4. Verilog 
-- Addition 2 floating point 
-- Multiply 2 floating point
-- RGB to Gray (one frame)
+- Addition 2 floating point number
+- Multiplication 2 floating point number
+- RGB to Gray (on one frame)
 - Testbench
   - input: text file (RGB)
   - output:  text file (Gray)
