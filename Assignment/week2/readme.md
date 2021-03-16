@@ -22,13 +22,13 @@
   
   `cvtColor(src, bwsrc, cv::COLOR_RGB2GRAY);`
   
-  - Convert image to text file
-  - Convert text file to image
+  - [x] Convert image to text file
+  - [ ]Convert text file to image
 ## 4. Verilog 
-- Addition 2 floating point number
-- Multiplication 2 floating point number
-- RGB to Gray (on one frame)
-- Testbench
+- [x] Addition 2 floating point number
+- [x] Multiplication 2 floating point number
+- [x] RGB to Gray (on one frame)
+- [ ] Testbench
   - input: text file (RGB)
   - output:  text file (Gray)
 ## 5. Result 
