@@ -23,7 +23,7 @@
   `cvtColor(src, bwsrc, cv::COLOR_RGB2GRAY);`
   
   - [x] Convert image to text file
-  - [ ]Convert text file to image
+  - [ ] Convert text file to image
 ## 4. Verilog 
 - [x] Addition 2 floating point number
 - [x] Multiplication 2 floating point number
