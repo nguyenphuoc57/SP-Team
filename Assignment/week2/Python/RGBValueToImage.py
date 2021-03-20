@@ -1,30 +1,39 @@
 import numpy as np
 import cv2
+
+from codecs import decode
+import struct
 redfile=open('redbinfile.txt','r')
 greenfile=open('greenbinfile.txt','r')
 bluefile=open('bluebinfile.txt','r')
 
-image=np.zeros((500,500,3),np.uint8)
+grayfile=open('outGray.txt','r')
+image=np.zeros((300,300,3),np.uint8)
 redpixel=[]
 greenpixel=[]
 bluepixel=[]
 
-
+def bin_to_float(binary):
+    return struct.unpack('!f',struct.pack('!I', int(binary, 2)))[0]
 x=0
 i=0
 j=0
 for r in redfile:
     #redpixel.append(r)
     redpixel.append(int(r,2))
+
 for g in greenfile:
    # greenpixel.append(g)
     greenpixel.append(int(g,2))
+
 for b in bluefile:
    # bluepixel.append(b)
      bluepixel.append(int(b,2))
+
 for i in range (500):
     for j in range(500):
-        image[i,j] = (bluepixel[x], greenpixel[x], redpixel[x])
+       # image[i,j] = (bluepixel[x], greenpixel[x], redpixel[x])
+        image[i, j] = (redpixel[x], redpixel[x], redpixel[x])
         x =x+1
 
 def RGBtoGray(red,green,blue):
@@ -47,3 +56,4 @@ cv2.destroyAllWindows()
 redfile.close()
 greenfile.close()
 bluefile.close()
+grayfile.close()
