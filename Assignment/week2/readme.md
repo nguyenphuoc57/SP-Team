@@ -24,6 +24,7 @@
   
   - [x] Convert image to file bin
   - [x] Convert text file bin to image
+
  *DONE*
 ## 4. Verilog 
 - [x] Addition 2 floating point number
@@ -32,5 +33,6 @@
 - [x] Testbench
   - input: text file (RGB)
   - output:  text file (Gray)
+  
    *DONE*
 ## 5. Result 
