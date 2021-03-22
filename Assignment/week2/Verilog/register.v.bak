@@ -1,0 +1,21 @@
+module register (Da_In,WS,Da_out,clk);
+input [31:0] Da_In;
+input clk;
+input WS;
+output reg [31:0] Da_out;
+
+wire [31:0]Q;
+wire [31:0] a1,a0,a3;
+wire WSn;
+
+and and0[31:0] (a0,Da_In,WS);
+not not0(WSn,WS);
+and and1[31:0](a1,WSn,Q);
+or or0[31:0](a3,a1,a0);
+
+						  
+dff1 dffunit[31:0] (.datout(Da_out), 
+						  .clk(clk), 
+						  .datin(a3)
+						  );
+endmodule
