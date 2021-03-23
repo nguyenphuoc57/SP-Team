@@ -33,6 +33,9 @@
 - [x] Testbench
   - input: text file (RGB)
   - output:  text file (Gray)
+ ![image](https://user-images.githubusercontent.com/75322678/112105795-68f84100-8bdf-11eb-83f9-599ae22e09ed.png)
+![image](https://user-images.githubusercontent.com/75322678/112105850-79102080-8bdf-11eb-91aa-1d572012731d.png)
+
   
    *DONE*
 ## 5. Result 
