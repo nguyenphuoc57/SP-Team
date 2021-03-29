@@ -39,9 +39,10 @@
   
    *DONE*
 ## 5. Result 
-     ## Python Image
+    ## Python Image
    ![Python_Image](https://user-images.githubusercontent.com/79899558/112815907-00133c00-90ab-11eb-9582-b9a86c4da60c.jpg)
-     ## Verilog Image
+    
+    ## Verilog Image
    ![Verilog_Image](https://user-images.githubusercontent.com/79899558/112815991-1a4d1a00-90ab-11eb-9f49-896742bfaff0.jpg)
 
 
