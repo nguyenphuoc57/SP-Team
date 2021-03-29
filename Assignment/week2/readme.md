@@ -39,6 +39,9 @@
   
    *DONE*
 ## 5. Result 
+    ## Source Picture
+   ![resize_Lulu](https://user-images.githubusercontent.com/79899558/112816351-82036500-90ab-11eb-91d9-193ab95a43c1.jpg)
+
     ## Python Image
    ![Python_Image](https://user-images.githubusercontent.com/79899558/112815907-00133c00-90ab-11eb-9582-b9a86c4da60c.jpg)
     
