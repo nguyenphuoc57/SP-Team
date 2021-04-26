@@ -50,89 +50,36 @@ Kiến trúc của VGG19 được phát triển từ tiền thân của nó là 
 
 ### BLOCK 1:
 **2 Conv, mỗi Conv có:**
-64 filter
+64 filter, kernel_size 3x3, stride 1, activation ='relu'
 
-kernel_size 3x3
-
-stride 1
-
-activation ='relu'
-
-**1 Max Pooling**:
-kernel_size 2x2
-
-stride 2
+**1 Max Pooling**: kernel_size 2x2, stride 2
 
 ### BLOCK 2:
-**2 Conv, mỗi Conv có:**
+**2 Conv, mỗi Conv có:** 128 filter, kernel_size 3x3, stride 1, activation ='relu',
 
-128 filter
-
-kernel_size 3x3
-
-stride 1
-
-activation ='relu'
-
-**1 Max Pooling**:
-kernel_size 2x2
-
-stride 2
+**1 Max Pooling**:, kernel_size 2x2, stride 2
 
 ### BLOCK 3:
 
-**4 Conv, mỗi Conv có:**
-256 filter
+**4 Conv, mỗi Conv có:** 256 filter, kernel_size 3x3, stride 1, activation ='relu'
 
-kernel_size 3x3
-
-stride 1
-
-activation ='relu'
-
-**1 Max Pooling**:
-kernel_size 2x2
-
-stride 2
+**1 Max Pooling**: kernel_size 2x2, stride 2
 
 ### BLOCK 4:
-**4 Conv, mỗi Conv có:**
+**4 Conv, mỗi Conv có:** 512 filter, kernel_size 3x3, stride 1, activation ='relu'
 
-512 filter
-
-kernel_size 3x3
-
-stride 1
-
-activation ='relu'
-
-**1 Max Pooling**:
-
-kernel_size 2x2
-
-stride 2
+**1 Max Pooling**: kernel_size 2x2, stride 2
 
 ### BLOCK 5:
-**4 Conv, mỗi Conv có:**
+**4 Conv, mỗi Conv có:** 512 filter, kernel_size 3x3, stride 1, activation ='relu'
 
-512 filter
-
-kernel_size 3x3
-
-stride 1
-
-activation ='relu'
-
-**1 Max Pooling**:
-
-kernel_size 2x2
-
-stride 2
+**1 Max Pooling**: kernel_size 2x2, stride 2
 
 ### BLOCK 6:
 3 fully connected 
 
 ## 3. Thực hiện mạng với Python
+
 [] Load và phân chia data_train, data_valid và data_test
 
 [x] Cấu trúc
