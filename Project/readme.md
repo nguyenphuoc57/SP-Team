@@ -84,15 +84,15 @@ Kiến trúc của VGG19 được phát triển từ tiền thân của nó là 
 
 ## 3. Thực hiện mạng với Python
 
-- [] Load và phân chia data_train, data_valid và data_test
+- [ ] Load và phân chia data_train, data_valid và data_test
 
 - [x] Xây dựng model
 
-- [] Training
+- [ ] Training
 
-- [] Đánh giá 
+- [ ] Đánh giá 
 
-- [] Lưu mạng, label binarizer và đồ thị
+- [ ] Lưu mạng, label binarizer và đồ thị
 
 ## 4. Thực hiện mạng với Verilog lên FPGB
 
