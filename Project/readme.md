@@ -1,3 +1,4 @@
+
 # *Report of Group - Update weekly
 
 # THIẾT KẾ VÀ THỰC HIỆN MẠNG VGG19 LÊN FPGB
@@ -11,9 +12,27 @@
 
 ![image](https://user-images.githubusercontent.com/75322678/116119750-f5b78280-a6e8-11eb-8964-fedcebb447d0.png)
 
-![image](https://user-images.githubusercontent.com/75322678/116120199-7eceb980-a6e9-11eb-8ac2-30bf899482cd.gif)
+**Pooling**: Lớp pooling sẽ giảm bớt số lượng tham số khi hình ảnh quá lớn. Không gian pooling còn được gọi là lấy mẫu con hoặc lấy mẫu xuống làm giảm kích thước của mỗi map nhưng vẫn giữ lại thông tin quan trọng. Các pooling có thể có nhiều loại khác nhau:
+- Max Pooling
+- Average Pooling
+- Sum Pooling
+Max pooling lấy phần tử lớn nhất từ ma trận đối tượng, hoặc lấy tổng trung bình. Tổng tất cả các phần tử trong map gọi là sum pooling
 
-**Pooling
+![image](https://user-images.githubusercontent.com/75322678/116120555-da00ac00-a6e9-11eb-8a5c-4b9f2f5bccea.png)
+**Đường viền - Padding:**
+Đôi khi kernel không phù hợp với hình ảnh đầu vào. Ta có 2 lựa chọn:
+Chèn thêm các số 0 vào 4 đường biên của hình ảnh (padding).
+Cắt bớt hình ảnh tại những điểm không phù hợp với kernel.
+**Bước nhảy - Stride:**
+Stride là số pixel thay đổi trên ma trận đầu vào. Khi stride là 1 thì ta di chuyển các kernel 1 pixel. Khi stride là 2 thì ta di chuyển các kernel đi 2 pixel và tiếp tục như vậy. Hình dưới là lớp tích chập hoạt động với stride là 2.
+![image](https://user-images.githubusercontent.com/75322678/116121084-74f98600-a6ea-11eb-82a4-b18e06e6dd9c.png)
+
+
+**Hàm phi tuyến - ReLU:**
+ReLU viết tắt của Rectified Linear Unit, là 1 hàm phi tuyến. Với đầu ra là: ƒ (x) = max (0, x).
+Tại sao ReLU lại quan trọng: ReLU giới thiệu tính phi tuyến trong ConvNet. Vì dữ liệu trong thế giới mà chúng ta tìm hiểu là các giá trị tuyến tính không âm.
+*Có 1 số hà phi tuyến khác như tanh, sigmoid cũng có thể được sử dụng thay cho ReLU. Hầu hết người ta thường dùng ReLU vì nó có hiệu suất tốt.*
+![image](https://user-images.githubusercontent.com/75322678/116121028-63b07980-a6ea-11eb-8447-efba54010a3f.png)
 
 
 ## 2. Cấu trúc của VGG19 model
