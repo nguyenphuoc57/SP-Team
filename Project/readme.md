@@ -11,7 +11,7 @@
 
 ![image](https://user-images.githubusercontent.com/75322678/116119750-f5b78280-a6e8-11eb-8964-fedcebb447d0.png)
 
-![Alt Text](https://user-images.githubusercontent.com/75322678/116120199-7eceb980-a6e9-11eb-8ac2-30bf899482cd.gif)
+![image](https://user-images.githubusercontent.com/75322678/116120199-7eceb980-a6e9-11eb-8ac2-30bf899482cd.gif)
 
 **Pooling
 
