@@ -1,5 +1,4 @@
-
-# *Report of Group - Update weekly
+## *Report of Group - Update weekly*
 
 # THIẾT KẾ VÀ THỰC HIỆN MẠNG VGG19 LÊN FPGB
 
@@ -19,10 +18,12 @@
 Max pooling lấy phần tử lớn nhất từ ma trận đối tượng, hoặc lấy tổng trung bình. Tổng tất cả các phần tử trong map gọi là sum pooling
 
 ![image](https://user-images.githubusercontent.com/75322678/116120555-da00ac00-a6e9-11eb-8a5c-4b9f2f5bccea.png)
+
 **Đường viền - Padding:**
 Đôi khi kernel không phù hợp với hình ảnh đầu vào. Ta có 2 lựa chọn:
 Chèn thêm các số 0 vào 4 đường biên của hình ảnh (padding).
 Cắt bớt hình ảnh tại những điểm không phù hợp với kernel.
+
 **Bước nhảy - Stride:**
 Stride là số pixel thay đổi trên ma trận đầu vào. Khi stride là 1 thì ta di chuyển các kernel 1 pixel. Khi stride là 2 thì ta di chuyển các kernel đi 2 pixel và tiếp tục như vậy. Hình dưới là lớp tích chập hoạt động với stride là 2.
 ![image](https://user-images.githubusercontent.com/75322678/116121084-74f98600-a6ea-11eb-82a4-b18e06e6dd9c.png)
@@ -31,12 +32,79 @@ Stride là số pixel thay đổi trên ma trận đầu vào. Khi stride là 1 
 **Hàm phi tuyến - ReLU:**
 ReLU viết tắt của Rectified Linear Unit, là 1 hàm phi tuyến. Với đầu ra là: ƒ (x) = max (0, x).
 Tại sao ReLU lại quan trọng: ReLU giới thiệu tính phi tuyến trong ConvNet. Vì dữ liệu trong thế giới mà chúng ta tìm hiểu là các giá trị tuyến tính không âm.
-*Có 1 số hà phi tuyến khác như tanh, sigmoid cũng có thể được sử dụng thay cho ReLU. Hầu hết người ta thường dùng ReLU vì nó có hiệu suất tốt.*
+
+*Có 1 số hàm phi tuyến khác như tanh, sigmoid cũng có thể được sử dụng thay cho ReLU. Hầu hết người ta thường dùng ReLU vì nó có hiệu suất tốt.*
 ![image](https://user-images.githubusercontent.com/75322678/116121028-63b07980-a6ea-11eb-8447-efba54010a3f.png)
 
+**Fully Connected** 
+Sau khi ảnh được truyền qua nhiều convolutional layer và pooling layer thì model đã học được tương đối các đặc điểm của ảnh (ví dụ mắt, mũi, khung mặt,…) thì tensor của output của layer cuối cùng, kích thước HWD, sẽ được chuyển về 1 vector kích thước (HWD)
+
+![image](https://user-images.githubusercontent.com/75322678/116124189-2ea62600-a6ee-11eb-9fc7-2a1197284e33.png)
 
 ## 2. Cấu trúc của VGG19 model
+Kiến trúc của VGG19 được phát triển từ tiền thân của nó là VGG16. Kiến trúc VGG-16 bao gồm 13 layers tích chập 2 chiều (thay vì 5 so với AlexNet) và 2 layers fully connected. Đối với VGG-19, sẽ gồm 16 layers tích chập (mỗi conv tăng 1 bộ với 3 conv cuối) và tăng 1 layers fully connected.
 
+![image](https://user-images.githubusercontent.com/75322678/116121319-b0945000-a6ea-11eb-88c2-6c1cca1473f9.png)
+
+Đầu vào là image size 224x224x1
+
+# BLOCK 1:
+**2 Conv, mỗi Conv có:**
+64 filter
+kernel_size 3x3
+stride 1
+activation ='relu'
+
+**1 Max Pooling**:
+kernel_size 2x2
+stride 2
+
+# BLOCK 2:
+**2 Conv, mỗi Conv có:**
+128 filter
+kernel_size 3x3
+stride 1
+activation ='relu'
+
+**1 Max Pooling**:
+kernel_size 2x2
+stride 2
+
+# BLOCK 3:
+**4 Conv, mỗi Conv có:**
+256 filter
+kernel_size 3x3
+stride 1
+activation ='relu'
+
+**1 Max Pooling**:
+kernel_size 2x2
+stride 2
+
+# BLOCK 4:
+**4 Conv, mỗi Conv có:**
+512 filter
+kernel_size 3x3
+stride 1
+activation ='relu'
+
+**1 Max Pooling**:
+kernel_size 2x2
+stride 2
+
+# BLOCK 5:
+**4 Conv, mỗi Conv có:**
+512 filter
+kernel_size 3x3
+stride 1
+activation ='relu'
+
+**1 Max Pooling**:
+kernel_size 2x2
+stride 2
+
+# BLOCK 6:
+3 fully connected 
 
 ## 3. Thực hiện mạng với Python
 
