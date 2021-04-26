@@ -2,6 +2,10 @@
 
 # THIẾT KẾ VÀ THỰC HIỆN MẠNG VGG19 LÊN FPGB
 
+Mục tiêu của đồ án là nhận diện chó và mèo
+Input: 1 image chó, mèo, hoặc không phải chó mèo
+Output: 1 kết  luận ảnh đó là chó hay mèo hoặc không phải chó mèo
+
 ## 1. Giới thiệu về CNN
 **Tổng quan**: 
 - Trong mạng neural, mô hình mạng neural tích chập (CNN) là 1 trong những mô hình để nhận dạng và phân loại hình ảnh. Trong đó, xác định đối tượng và nhận dạng khuôn mặt là 1 trong số những lĩnh vực mà CNN được sử dụng rộng rãi.
@@ -80,15 +84,15 @@ Kiến trúc của VGG19 được phát triển từ tiền thân của nó là 
 
 ## 3. Thực hiện mạng với Python
 
-[] Load và phân chia data_train, data_valid và data_test
+[]Load và phân chia data_train, data_valid và data_test
 
-[x] Cấu trúc
+[x]Cấu trúc
 
-[] Training
+[]Training
 
-[] Đánh giá 
+[]Đánh giá 
 
-[] Lưu mạng, label binarizer và đồ thị
+[]Lưu mạng, label binarizer và đồ thị
 
 ## 4. Thực hiện mạng với Verilog lên FPGB
 
