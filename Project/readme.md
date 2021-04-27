@@ -4,9 +4,9 @@
 
 Mục tiêu của đồ án là nhận diện chó và mèo
 
-**Input:** 1 image chó, mèo, hoặc không phải chó mèo
+**Input:** 1 image bút, thước, cục tẩy
 
-**Output:** 1 kết  luận ảnh đó là chó hay mèo hoặc không phải chó mèo
+**Output:** 1 kết luận đó là bút, thước hay là cục tẩy
 
 ## 1. Giới thiệu về CNN
 **Tổng quan**: 
