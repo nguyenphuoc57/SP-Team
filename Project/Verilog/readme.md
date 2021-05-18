@@ -8,6 +8,6 @@
 - [ ] Softmax
 - [ ] Fully connect 
 ## 2. Specify
-- *Convolution 2D*
+- ### Convolution 2D
 ### - Relu
 ### - Maxpooling
