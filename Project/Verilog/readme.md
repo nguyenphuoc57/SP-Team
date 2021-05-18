@@ -1,3 +1,4 @@
+## *Report of Group - Update weekly*
 ## 1. Module  
 - [x] Convolution 2D
 - [x] Relu
