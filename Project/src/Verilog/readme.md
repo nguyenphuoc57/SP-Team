@@ -6,6 +6,7 @@
 - [x] Stride
 - [ ] Padding
 - [ ] Softmax
+- [ ] Flatten
 - [ ] Fully connect 
 ## 2. Specify
 - ### Convolution 2D
