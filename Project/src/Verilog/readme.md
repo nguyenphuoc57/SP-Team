@@ -4,7 +4,7 @@
 - [x] Relu
 - [x] Max pooling
 - [x] Stride
-- [ ] Padding
+- [x] Padding
 - [ ] Softmax
 - [ ] Flatten
 - [ ] Fully connect 
