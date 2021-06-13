@@ -3,5 +3,5 @@ https://drive.google.com/drive/folders/1AibCd7FIp-t7lCon3WEJIqnyR0tjG925?usp=sha
 ## Include: 
 #        +Variables
 #        +Assets
-#        +Kernel
-#        +Bias
+#        +Kernel (RGB + Gray)
+#        +Bias   (RGB + Gray)
