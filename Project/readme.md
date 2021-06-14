@@ -86,11 +86,11 @@ Kiến trúc của VGG19 được phát triển từ tiền thân của nó là 
 
 ## 3. Thực hiện mạng với Python
 
-- [ ] Load và phân chia data_train, data_valid và data_test
+- [x] Load và phân chia data_train, data_valid và data_test
 
 - [x] Xây dựng model
 
-- [ ] Training
+- [x] Training
 
 - [ ] Đánh giá 
 
