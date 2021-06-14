@@ -83,6 +83,7 @@ Kiến trúc của VGG19 được phát triển từ tiền thân của nó là 
 
 ### BLOCK 6:
 **2 FullyConnected :** flatten 4096, activation='relu'
+
 **1 FullyConnected:** flatten 1000, activation='softmax' 
 
 ## 3. Thực hiện mạng với Python
