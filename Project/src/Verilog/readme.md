@@ -5,9 +5,8 @@
 - [x] Max pooling
 - [x] Stride
 - [x] Padding
+- [x] Fully connect 
 - [ ] Softmax
-- [ ] Flatten
-- [ ] Fully connect 
 ## 2. Specify
 - ### Convolution 2D
 - ### Relu
