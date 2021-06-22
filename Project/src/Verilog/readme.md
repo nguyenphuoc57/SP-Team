@@ -21,3 +21,6 @@
 ![image](https://user-images.githubusercontent.com/75322678/118592882-e780f180-b7d0-11eb-8555-de3ebeebbb57.png)
 - ### Padding
 ![padding](https://user-images.githubusercontent.com/75322678/121129313-f8b0a180-c856-11eb-8c2c-196ebf801500.png)
+- ### Fullyconnected
+- ![fully](https://user-images.githubusercontent.com/75322678/122872169-3e429380-d35a-11eb-8b0d-fad0dd08d7af.png)
+
